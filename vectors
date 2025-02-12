@@ -1,0 +1,68 @@
+#creating vector
+apple<-c('red','green',"yellow")
+print(apple)
+print(class(apple))
+#Creating a vector using : operator
+x=1:7;x 
+#Creating a vector using seq() function
+seq(from=1,to=10,by=0.1)
+#complex
+z = 1 + 2i
+z  
+#logic
+x = 1; y = 2   
+z = x > y      
+z              
+#naming vectors
+v=c("anu","satya")
+v
+names(v)=c("first","last")
+v
+v["first"]
+#character vector
+ x <- "Hello world!"
+is.character(x)
+length(x)
+nchar(x)
+x<-"shanmukhi"
+is.character(x)
+length(x)
+nchar(x)
+v<-charToRaw("anu")
+v
+print(class(v))
+
+# create array
+a <- array(c('green','yellow'),dim = c(3,3,2))
+print(a)
+#vectors of different lengths
+vector1 <-c(5,9,3)
+vector2 <-c(10,11,12,13,14,15)
+
+result<- array(c(vector1,vector2),dim = c(3,3,2))
+print(result)
+#naming columns and rows
+vector1 <-c(5,9,3)
+vector2 <-c(10,11,12,13,14,15)
+column.names<-c("COL1","COL2","COL3")
+row.names<-c("ROW1","ROW2","ROW3")
+matrix.names<-c("Matrix1","Matrix2")
+result <- array(c(vector1,vector2),dim = c(3,3,2),dimnames= list(row.names,column.names,                                                                 matrix.names))
+print(result)
+#recursive function
+recursive.factorial <- function(x)
+{
+  if (x== 0) return (1)
+  else return (x * recursive.factorial(x-1))
+}
+recursive.factorial(5)
+#no pointers
+x<-c(12,45,6)
+sort(x)
+y<-function(v){
+  odds<-which(v%%2==1)
+  evens<-which(v%%2==0)
+  list(o=odds,e=evens)
+}
+y(c(2,34,1,5))
+
