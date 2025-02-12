@@ -1,0 +1,15 @@
+recursive.factorial <- function(x)
+{
+  if (x== 0) return (1)
+  else return (x * recursive.factorial(x-1))
+}
+recursive.factorial(5)
+#no pointers
+x<-c(12,45,6)
+sort(x)
+y<-function(v){
+  odds<-which(v%%2==1)
+  evens<-which(v%%2==0)
+  list(o=odds,e=evens)
+}
+y(c(2,34,1,5))
